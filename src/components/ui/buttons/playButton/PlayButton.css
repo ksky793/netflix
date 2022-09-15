@@ -1,0 +1,18 @@
+.btn-play {
+	display: flex;
+}
+.btn-play .ic-play {
+	margin-right: 5px;
+}
+
+.btn-play .ic-play,
+.paragraph-play {
+	font-size: 14px;
+}
+
+@media (min-width: 481px) {
+	.btn-play .ic-play,
+	.paragraph-play {
+		font-size: 16px;
+	}
+}
