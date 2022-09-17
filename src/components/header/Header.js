@@ -35,7 +35,7 @@ const Header = () => {
 				</h1>
 				<p className='header-description'>{movie?.overview}</p>
 				<div className='header-buttons-container'>
-					<PlayButton  />
+					<PlayButton isRowButton={false} />
 				</div>
 			</div>
 		</header>

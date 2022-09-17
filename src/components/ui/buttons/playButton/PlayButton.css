@@ -1,5 +1,6 @@
 .btn-play {
 	display: flex;
+	cursor: pointer;
 }
 .btn-play .ic-play {
 	margin-right: 5px;

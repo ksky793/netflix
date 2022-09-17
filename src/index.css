@@ -4,16 +4,20 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	/* outline: 1px solid red; */
 }
 
 :root {
 	--movieAfterBackgroundColor: rgba(8, 8, 25, 0.747);
 	--movieTitleColor: white;
 	--movieDescriptionColor: rgb(177, 175, 175);
+	--popularityColor: rgb(106, 125, 75);
+	--backgroundBodyNetflixColor: #100f0f;
 }
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	background-color: var(--backgroundBodyNetflixColor);
 }
 
 .btns {

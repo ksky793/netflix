@@ -1,0 +1,8 @@
+.row-movies::-webkit-scrollbar {
+	display: none;
+}
+.row-title {
+	margin: 15px 0;
+	color: white;
+	font-weight: 300;
+}
