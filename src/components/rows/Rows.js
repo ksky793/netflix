@@ -1,5 +1,6 @@
 import requests from '../../requests';
 import Row from './row/Row';
+import './Rows.css';
 const Rows = () => {
 	const movies = [
 		{

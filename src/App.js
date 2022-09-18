@@ -1,11 +1,14 @@
 import './App.css';
-import Header from './components/header/Header';
-import Rows from './components/rows/Rows';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/home/Home';
+import Video from './pages/video/Video';
 function App() {
 	return (
 		<div className='App'>
-			<Header />
-			<Rows />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/movie/:movieId/video' element={<Video />} />
+			</Routes>
 		</div>
 	);
 }

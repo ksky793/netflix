@@ -3,15 +3,14 @@ import axios from '../../axios';
 import requests from '../../requests';
 import { useEffect } from 'react';
 import { useState } from 'react';
-
 import './Header.css';
 
 const Header = () => {
 	const [movie, setMovie] = useState();
+
 	useEffect(() => {
 		async function fetchData() {
 			const request = await axios.get(requests.fetchNetflixOriginals);
-
 			setMovie(
 				request.data.results[
 					Math.floor(Math.random() * request.data.results.length - 1)
@@ -20,6 +19,7 @@ const Header = () => {
 		}
 		fetchData();
 	}, []);
+
 	return (
 		// In this case char "?" means if movie is ever undefined it wont crash
 		<header
@@ -35,7 +35,7 @@ const Header = () => {
 				</h1>
 				<p className='header-description'>{movie?.overview}</p>
 				<div className='header-buttons-container'>
-					<PlayButton isRowButton={false} />
+					<PlayButton isRowButton={false} movieId={movie?.id} />
 				</div>
 			</div>
 		</header>

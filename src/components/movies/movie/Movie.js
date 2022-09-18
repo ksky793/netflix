@@ -23,6 +23,7 @@ const Movie = ({ movie, isPosterPath }) => {
 
 			setMovieGenres(genres.data.genres);
 
+			console.log(movie);
 			return genres;
 		}
 		fetchData();
@@ -39,7 +40,7 @@ const Movie = ({ movie, isPosterPath }) => {
 			>
 				<div className='movie-text-container'>
 					<h3 className='movie-title'>{movie.title || movie.name}</h3>
-					<PlayButton isRowButton={true} />
+					<PlayButton isRowButton={true} movieId={movie?.id} />
 					<h4 className='movie-vote-average'>
 						Popularity: {movie.vote_average}
 					</h4>
