@@ -22,8 +22,6 @@ const Movie = ({ movie, isPosterPath }) => {
 			);
 
 			setMovieGenres(genres.data.genres);
-
-			console.log(movie);
 			return genres;
 		}
 		fetchData();

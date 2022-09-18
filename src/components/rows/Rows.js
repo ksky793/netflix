@@ -4,13 +4,13 @@ import './Rows.css';
 const Rows = () => {
 	const movies = [
 		{
-			rowTitle: 'Trending Now',
-			fetchUrl: requests.fetchTrending,
+			rowTitle: 'Top Rated',
+			fetchUrl: requests.fetchTopRated,
 			isPosterPath: false,
 		},
 		{
-			rowTitle: 'Netflix Originals',
-			fetchUrl: requests.fetchNetflixOriginals,
+			rowTitle: 'Action Movies',
+			fetchUrl: requests.fetchActionMovies,
 			isPosterPath: true,
 		},
 		// {

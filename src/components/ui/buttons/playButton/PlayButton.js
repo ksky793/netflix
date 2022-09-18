@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './PlayButton.css';
 const PlayButton = ({ isRowButton, movieId }) => {
 	return (
-		<Link to={`/movie/${movieId}/video`}>
+		<Link to={`/movie/${movieId}/video`} state={{ movieId: movieId }}>
 			<button className='btns btn-play'>
 				<FaPlay
 					className='ic-play'
